@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert case</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    textarea{
+        height: 600px;
+        width: 900px;
+        margin-bottom: 20px;
+
+    }
+    .actions{
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    .btn{
+        margin: 5px;
+        display: flex;
+        height: 40px;
+        width: 90px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
+
+<body>
+        <form action="/">
+            <div class="row"><textarea id="content" placeholder="Type or paste your content here"
+                    autofocus=""></textarea></div>
+        </form>
+        <div class="messages"></div>
+        <div class="actions">
+            <button id="sentence" class="btn">Sentence case</button>
+            <button id="lower" class="btn">lower case</button>
+            <button id="upper" class="btn">UPPER CASE</button>
+            <button id="capitalized" class="btn">Capitalized Case</button>
+            <button id="alternating" class="btn">aLtErNaTiNg cAsE</button>
+            <button id="clear" class="btn">Clear</button>
+        </div>
+        <div class="row counts">Character Count: <span id="char_count">0</span> | Word Count: <span
+                id="word_count">0</span> | Line Count: <span id="line_count">0</span></div>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
